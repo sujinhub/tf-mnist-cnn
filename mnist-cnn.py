@@ -34,6 +34,6 @@ model.compile(optimizer='adam',
               loss='sparse_categorical_crossentropy',
               metrics=['accuracy'])
 
-model.fit(x_train, y_train, batch_size=128, epochs=50)
+model.fit(x_train, y_train, batch_size=128, epochs=20)
 result = model.evaluate(x_test, y_test)
 print("Accuracy: ", result[1])
